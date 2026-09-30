@@ -2,6 +2,8 @@ import random
 couleurs_dispo = ['rouge','jaune','vert','bleu','orange','blanc','violet','fuchia']
 couleurs_ordi =[]
 couleur_utilisateur = []
+juste = 0
+présent = 0
 def tirer_couleur():
     for i in range (0,4):
         couleurs_ordi.append(random.choice(couleurs_dispo))
@@ -13,5 +15,21 @@ def verif_position():
             print(f"La couleur {couleur_utilisateur} est mauvaise", end="et")
 def verif():
     for 
+
+
+
+
+def tirer_couleur():
+    for i in range (0,4):
+        couleurs_ordi.append(random.choice(couleurs_dipo))
+
+def check_position(couleurs_utilisateur):
+    '''vérifie la position des couleurs'''
+    for i in range(len(couleurs_ordi)):
+        if couleur_ordi[i] == couleur_utilisateur[i].lowercase():
+        juste += 1
+def main():
+    pass
+
 
 
