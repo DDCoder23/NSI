@@ -11,5 +11,7 @@ def verif_position():
             print(f"La couleur {couleur_utilisateur} est bonne ", end="et")
         else :
             print(f"La couleur {couleur_utilisateur} est mauvaise", end="et")
+def verif():
+    for 
 
 
