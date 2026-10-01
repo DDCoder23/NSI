@@ -8,6 +8,7 @@ def tirer_couleur():
     for i in range (0,4):
         couleurs_ordi.append(random.choice(couleurs_dispo))
 
+
 def verif_couleur(couleur_utilisateur):
     for couleur in couleur_utilisateur :
         if couleur in couleurs_ordi:
