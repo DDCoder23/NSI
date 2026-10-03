@@ -29,9 +29,14 @@ def init(present = None,juste = None):
 
 def demander_couleur(couleurs_utilisateur):
     couleurs_utilisateur.clear()
-    for i in range (1,5):
-        couleur = input(f"Renseigne la couleur n° {i}" )
-        couleurs_utilisateur.append(couleur)
+    while len (couleurs_utilisateur) != 4:
+        try:
+            couleur = input(f"Renseigne la couleur n° {i}" )
+            if not couleur.lower in couleurs_dispo:
+                raise ValueError
+            couleurs_utilisateur.append(couleur)
+        except ValueError:
+            print("La couleur spécifiée n'existe pas ou n'est pas disponible")
     return couleurs_utilisateur
 
 
