@@ -2,25 +2,24 @@ import random
 couleurs_dispo = ['rouge','jaune','vert','bleu','orange','blanc','violet','fuchia']
 couleurs_ordi =[]
 couleurs_utilisateur = []
-juste = 0
-present = 0
+
 def tirer_couleur():
     for i in range (0,4):
         couleurs_ordi.append(random.choice(couleurs_dispo))
 
 
-def verif_couleur(couleur_utilisateur,present,juste):
-    for couleur in couleur_utilisateur :
-        if couleur in couleurs_ordi:
-            print(f"La couleur {couleur} est présente ")
+def verif_couleur(couleur_utilisateur,present,juste,couleurs_restantes):
+    for i in range(len(couleurs_utilisateur)):
+            if couleurs_utilisateur[i].lower() in couleurs_restantes:
+                present += 1
+                couleurs_restantes.remove(couleurs_utilisateur[i].lower())
+    return present
 
-            present += 1
-    
-    return present -juste
 
-def init(present,juste):
-    present =0
+def init(present = None,juste = None):
+    present = 0
     juste = 0
+    
     return present,juste
 
 
@@ -36,33 +35,34 @@ def demander_couleur(couleurs_utilisateur):
 
 def check_position(couleurs_utilisateur,juste):
     '''vérifie la position des couleurs'''
+    couleurs_restantes = couleurs_ordi.copy()
     for i in range(0,len(couleurs_ordi)):
-        print(len(couleurs_ordi))
-        print(len(couleurs_utilisateur))
-        if couleurs_ordi[i] == couleurs_utilisateur[i].lower():
-            
+        if couleurs_ordi[i] == couleurs_utilisateur[i].lower():            
             juste += 1
-    return juste
+            couleurs_restantes.remove(couleurs_utilisateur[i].lower())
+    return juste,couleurs_restantes 
 def boucle(couleurs_utilisateur):
     for i in range (1,11):
+        present,juste = init()
         demander_couleur(couleurs_utilisateur)
         present, juste = verif(couleurs_utilisateur,present,juste)
         if juste == 4:
             print("Toutes les couleurs sont bien placées. Vous avez gagné. ")
             break
         if juste != 4 :
-            print("Il y a '{juste} bien placés et {present} mal placés ")
-        present, juste = init(present,juste)
+            print(f"Il y a '{juste} bien placés et {present} mal placés ")
+        
 
 
 
 
 def verif(couleurs_utilisateur,present,juste):
     
-    juste = check_position(couleurs_utilisateur,juste)
-    present = verif_couleur(couleurs_utilisateur,present,juste)
+    juste, couleurs_restantes = check_position(couleurs_utilisateur,juste)
+    present = verif_couleur(couleurs_utilisateur,present,juste,couleurs_restantes)
     return present, juste
 def main():
+    
     tirer_couleur()
 
     boucle(couleurs_utilisateur)
