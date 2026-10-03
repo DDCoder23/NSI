@@ -4,6 +4,7 @@ couleurs_ordi =[]
 couleurs_utilisateur = []
 
 def tirer_couleur():
+    """Tire au hasard 4 couleurs parmi les couleurs disponibles"""
     for i in range (0,4):
         couleurs_ordi.append(random.choice(couleurs_dispo))
 
