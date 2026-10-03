@@ -9,13 +9,14 @@ def tirer_couleur():
         couleurs_ordi.append(random.choice(couleurs_dispo))
 
 
-def verif_couleur(couleur_utilisateur,present):
+def verif_couleur(couleur_utilisateur,present,juste):
     for couleur in couleur_utilisateur :
         if couleur in couleurs_ordi:
             print(f"La couleur {couleur} est présente ")
 
             present += 1
-    return present
+    
+    return present -juste
 
 def init(present,juste):
     present =0
@@ -32,19 +33,19 @@ def demander_couleur(couleurs_utilisateur):
     return couleurs_utilisateur
 
 
-def check_position(couleurs_utilisateur):
+def check_position(couleurs_utilisateur,juste):
     '''vérifie la position des couleurs'''
     for i in range(0,len(couleurs_ordi)):
         print(len(couleurs_ordi))
         print(len(couleurs_utilisateur))
         if couleurs_ordi[i] == couleurs_utilisateur[i].lower():
-            global juste
+            
             juste += 1
     return juste
-def boucle(couleurs_utilisateur,prensent):
+def boucle(couleurs_utilisateur):
     for i in range (1,11):
         demander_couleur(couleurs_utilisateur)
-        verif(couleurs_utilisateur,present)
+        verif(couleurs_utilisateur,present,juste)
         if juste == 4:
             print("Gagne ! ")
             break
@@ -55,13 +56,14 @@ def boucle(couleurs_utilisateur,prensent):
 
 
 
-def verif(couleurs_utilisateur,present):
-    verif_couleur(couleurs_utilisateur,present)
-    check_position(couleurs_utilisateur)
+def verif(couleurs_utilisateur,present,juste):
+    
+    juste = check_position(couleurs_utilisateur,juste)
+    present = verif_couleur(couleurs_utilisateur,present,juste)
 def main():
     tirer_couleur()
 
-    boucle(couleurs_utilisateur,present)
+    boucle(couleurs_utilisateur)
 
 
 
