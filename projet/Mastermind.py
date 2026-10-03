@@ -51,7 +51,7 @@ def boucle(couleurs_utilisateur):
         if juste == 4:
             print("Toutes les couleurs sont bien placées. Vous avez gagné. ")
             break
-        if juste != 4 and i != 10 :
+        elif juste != 4 and i != 10 :
             print(f"Il y a '{juste} bien placés et {present} mal placés ")
         else:
             print("Vous avez perdu!")
