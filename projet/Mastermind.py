@@ -27,6 +27,7 @@ def init(present,juste):
 
 
 def demander_couleur(couleurs_utilisateur):
+    couleurs_utilisateur.clear()
     for i in range (1,5):
         couleur = input(f"Renseigne la couleur n° {i}" )
         couleurs_utilisateur.append(couleur)
@@ -45,13 +46,13 @@ def check_position(couleurs_utilisateur,juste):
 def boucle(couleurs_utilisateur):
     for i in range (1,11):
         demander_couleur(couleurs_utilisateur)
-        verif(couleurs_utilisateur,present,juste)
+        present, juste = verif(couleurs_utilisateur,present,juste)
         if juste == 4:
-            print("Gagne ! ")
+            print("Toutes les couleurs sont bien placées. Vous avez gagné. ")
             break
         if juste != 4 :
-            print("Perdu ! ")
-        init(present,juste)
+            print("Il y a '{juste} bien placés et {present} mal placés ")
+        present, juste = init(present,juste)
 
 
 
@@ -60,6 +61,7 @@ def verif(couleurs_utilisateur,present,juste):
     
     juste = check_position(couleurs_utilisateur,juste)
     present = verif_couleur(couleurs_utilisateur,present,juste)
+    return present, juste
 def main():
     tirer_couleur()
 
