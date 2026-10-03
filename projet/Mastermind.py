@@ -8,11 +8,13 @@ def tirer_couleur():
         couleurs_ordi.append(random.choice(couleurs_dispo))
 
 
-def verif_couleur(couleur_utilisateur,present,juste,couleurs_restantes):
-    for i in range(len(couleurs_utilisateur)):
+def verif_couleur(couleur_utilisateur, present, juste, couleurs_restantes):
+    for i in range(len(couleur_utilisateur)):
+        if couleurs_utilisateur[i].lower() != couleurs_ordi[i]:
             if couleurs_utilisateur[i].lower() in couleurs_restantes:
                 present += 1
                 couleurs_restantes.remove(couleurs_utilisateur[i].lower())
+
     return present
 
 
@@ -49,8 +51,10 @@ def boucle(couleurs_utilisateur):
         if juste == 4:
             print("Toutes les couleurs sont bien placées. Vous avez gagné. ")
             break
-        if juste != 4 :
+        if juste != 4 and i != 10 :
             print(f"Il y a '{juste} bien placés et {present} mal placés ")
+        else:
+            print("Vous avez perdu!")
         
 
 
@@ -64,6 +68,7 @@ def verif(couleurs_utilisateur,present,juste):
 def main():
     
     tirer_couleur()
+    
 
     boucle(couleurs_utilisateur)
 
