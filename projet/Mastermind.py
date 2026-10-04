@@ -35,7 +35,7 @@ def demander_couleur(couleurs_utilisateur):
     while len (couleurs_utilisateur) != 4:
         try:
             couleur = input(f"Renseigne la couleur n° {i}" )
-            """ On empèche l'utilisateur de donner des réponces no comforme au règles du jeu""" 
+            """ On empèche l'utilisateur de donner des réponses non comformes aux règles du jeu""" 
             if not couleur.lower in couleurs_dispo:
                 raise ValueError
             couleurs_utilisateur.append(couleur)
@@ -54,7 +54,7 @@ def check_position(couleurs_utilisateur,juste):
     return juste,couleurs_restantes 
 
 def boucle(couleurs_utilisateur):
-    """ On mets en place la structure du jeu avec toutes les phrases que l'on a besoin""" 
+    """ On mets en place la structure du jeu avec toutes les phrases dont on a besoin""" 
     for i in range (1,11):
         present,juste = init()
         demander_couleur(couleurs_utilisateur)
