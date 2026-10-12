@@ -4,7 +4,7 @@ def calculer_capital(c,n=1):
     return c
 def depasse_5000(c):
     n = 0
-    while c <= 5000:
+    while c < 5000:
         c *= 1.05
         n += 1
     return n
