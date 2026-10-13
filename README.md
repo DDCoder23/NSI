@@ -40,17 +40,17 @@ Ce dépôt est uniquement à but pédagogique.<br>
 
 ### Conseils pour bien commencer
 
-- **Débutant complet :** OpenClassrooms ou LearnPython.org.
-- **Apprentissage par les exercices :** France-IOI ou Exercism.
-- **Apprentissage par les vidéos :** Graven ou CS50P.
-- **Création de jeux :** Invent with Python ou CodinGame.
-- **Automatisation de tâches :** Automate the Boring Stuff with Python.
-- **Programmation sans installation :** Google Colab ou Programiz.
+- **Débutant complet :** OpenClassrooms ou LearnPython.org. <br>
+- **Apprentissage par les exercices :** France-IOI ou Exercism. <br>
+- **Apprentissage par les vidéos :** Graven ou CS50P. <br>
+- **Création de jeux :** Invent with Python ou CodinGame. <br>
+- **Automatisation de tâches :** Automate the Boring Stuff with Python. <br>
+- **Programmation sans installation :** Google Colab ou Programiz. <br>
 - **Apprentissage sur téléphone :** Sololearn ou Mimo.
 ------
 **Conseil :** commencer par un cours principal, pratiquer régulièrement sur une deuxième plateforme et créer de petits projets personnels. Vous pouvez également contribuer au jeu [**The-last-signal**](https://github.com/The-last-signal-project/The-last-signal-) que je suis en train de développer.
 
-**Remarque : les plateformes freemium peuvent réserver certaines fonctionnalités aux abonnements payants. Vérifier les conditions d'accès avant de commencer.**
+**Remarque : les plateformes freemium peuvent réserver certaines fonctionnalités aux abonnements payants. Vérifier les conditions d'accès avant de commencer.** <br>
 
-**Ceci sont des exemples : si vous en connaissez d'autres et que vous voudriez en faire part merci de m'écrire un message dans la disscussion.**
+**Ceci sont des exemples : si vous en connaissez d'autres et que vous voudriez en faire part merci de m'écrire un message dans la disscussion.** <br>
 **Si vous avez des questions veuillez ouvrir une discussion pour que je puisse y répondre.**
