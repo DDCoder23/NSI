@@ -2,8 +2,8 @@
 C'est le dépot pour le cours de NSI <br>
 Pour utiliser le cours et/ou les feuilles d'exercices veuillez les télécharger.<br>
 Ce dépôt est uniquement à but pédagogique.<br>
-	
-# Sites gratuits pour apprendre Python
+----	
+## Sites gratuits pour apprendre Python
 
 | N° | Site | Lien | Profil / méthode d'apprentissage | Langue | Gratuité |
 |---:|---|---|---|---|---|
@@ -38,7 +38,7 @@ Ce dépôt est uniquement à but pédagogique.<br>
 | 29 | Mimo | https://mimo.org/ | Apprentissage par petites étapes sur mobile | Plusieurs langues | Freemium |
 | 30 | Future Engineer — Citizen Code | https://www.futureengineer.fr/ | Activités ludiques et missions de programmation | Français | Selon les activités |
 
-## Conseils pour bien commencer
+### Conseils pour bien commencer
 
 - **Débutant complet :** OpenClassrooms ou LearnPython.org.
 - **Apprentissage par les exercices :** France-IOI ou Exercism.
@@ -47,10 +47,10 @@ Ce dépôt est uniquement à but pédagogique.<br>
 - **Automatisation de tâches :** Automate the Boring Stuff with Python.
 - **Programmation sans installation :** Google Colab ou Programiz.
 - **Apprentissage sur téléphone :** Sololearn ou Mimo.
-
+------
 **Conseil :** commencer par un cours principal, pratiquer régulièrement sur une deuxième plateforme et créer de petits projets personnels. Vous pouvez également contribuer au jeu [**The-last-signal**](https://github.com/The-last-signal-project/The-last-signal-) que je suis en train de développer.
 
-*Remarque : les plateformes freemium peuvent réserver certaines fonctionnalités aux abonnements payants. Vérifier les conditions d'accès avant de commencer.*
+**Remarque : les plateformes freemium peuvent réserver certaines fonctionnalités aux abonnements payants. Vérifier les conditions d'accès avant de commencer.**
 
 **Ceci sont des exemples : si vous en connaissez d'autres et que vous voudriez en faire part merci de m'écrire un message dans la disscussion.**
 **Si vous avez des questions veuillez ouvrir une discussion pour que je puisse y répondre.**
