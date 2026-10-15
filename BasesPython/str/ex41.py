@@ -1,0 +1,2 @@
+chaine = "anticonstitutionnellement"
+chaine.split()
