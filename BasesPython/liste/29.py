@@ -14,4 +14,3 @@ while choix != "ok":
         
 
 
-    
