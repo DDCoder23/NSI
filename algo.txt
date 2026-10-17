@@ -1,0 +1,39 @@
+'''utilise la longueur du prénom pour l'entourer de caractère #'''
+
+nom = input("écris ton nom: ")
+phrase = '#Bonjour '+nom+'#'
+# on écrit le caractère # autant de fois qu'il y a de caractère' dans la phrase
+print("#"*len(phrase))
+print(phrase)
+print("#"*len(phrase))
+
+
+
+
+'''parcours d'une chaine de caractère pour en afficher tous les caractères'''
+
+motbizarre = "oryctérope"
+print("Comment ça s'écrit ?")
+for i in range(len(motbizarre)):
+    print(f"lettre {i+1} : {motbizarre[i]}")
+
+
+
+
+'''convertir une lettre en majuscule en utilisant son code ASCII'''
+
+lettre = input("Entrer une lettre minuscule: ")
+# code ascii de la lettre:
+code = ord(lettre)
+#on enleve 32 pour obtenir le code ascii de la majuscule correspondante
+code -= 32
+#on affiche la lettre en utilisant son code Ascii
+print( chr(code))
+
+
+'''convertir un mot en majuscules'''
+mot = input("Entre un mot en lettres minuscules ")
+MOT = ""
+for l in mot:
+    MOT = MOT + chr(ord(l)-32)
+print(MOT)
